@@ -51,6 +51,7 @@
             this.логинTextBox1 = new System.Windows.Forms.TextBox();
             this.парольTextBox2 = new System.Windows.Forms.TextBox();
             this.пользовательBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button3 = new System.Windows.Forms.Button();
             логинLabel = new System.Windows.Forms.Label();
             парольLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.пользовательBindingNavigator)).BeginInit();
@@ -255,12 +256,24 @@
             // 
             this.пользовательBindingSource.DataSource = typeof(Авторизация.Пользователь);
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(306, 331);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(151, 33);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Регистрация";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(парольLabel);
             this.Controls.Add(this.парольTextBox2);
             this.Controls.Add(логинLabel);
@@ -302,6 +315,7 @@
         private System.Windows.Forms.ToolStripButton пользовательBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox логинTextBox1;
         private System.Windows.Forms.TextBox парольTextBox2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
